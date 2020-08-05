@@ -1,8 +1,8 @@
 @ECHO OFF
 if exist "decompress" rmdir /Q /S decompress
+if not exist "input" mkdir input
 
 for %%f in (input\*.epub) do (	
-	if not exist "input" mkdir input
 	if not exist "OEBPS" mkdir OEBPS
 	if not exist "OEBPS\images" mkdir OEBPS\images
 	if not exist "finished" mkdir finished
